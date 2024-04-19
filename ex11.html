@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,7 +7,20 @@
 </head>
 <body>
 	<script>
-		
+		let numero = parseInt(prompt("Digite um numero: "))
+
+		let soma = 0
+		let contador = 1
+
+		while (contador <= numero){
+			if (contador % 2 === 0){
+				soma += contador
+			}
+
+			contador++
+
+			document.write(`A soma dos numero pares entre 1 e ${numero} é: ${soma} ` + "<br>")
+		}
 	</script>
 </body>
 </html>
