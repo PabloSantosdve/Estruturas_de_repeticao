@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		let numero = parseInt(prompt("Digite um numero inteiro: "))
+
+		let a = 0
+		let b = 1
+		document.write("Sequencia de Fibonacci até " + numero + ": <br />")
+		document.write(a) // O primeiro numero da sequencia é sempre 0
+		document.write(b) // O segundo número da sequecia é sempre 1
+
+		while(a + b <= numero){ /* while continuara enquanto a some de A e B for menor ou igual ao número fornecido */
+			let proximo = a + b; // Calculamo o proximo numero da sequencias somando os valores atuais de A e B e armazenamos o resultado na variavel "proximo"
+			alert(proximo)
+			a = b 
+			b = proximo
+		}
+		
+	</script>
+</body>
+</html>
