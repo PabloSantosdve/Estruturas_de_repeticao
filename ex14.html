@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numero = parseInt(prompt("Digite um numero:"))
+        let fatorial = 1 
+        let contador = 1
+
+        if (numero <0){
+            document.write("O fatorial de numeros negativos não é definido")
+        }else{
+            while(contador <= numero){
+                fatorial *= contador // multiplica o fatorial pelo contador atual
+                contador++
+            }
+
+            document.write(`O fatorial de ${numero} é ${fatorial}`)
+        }
+    </script>
+</body>
+</html>

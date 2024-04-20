@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let contador = 1;
+    let soma = 0;
+
+    do {
+        let numero = parseInt(prompt(`Digite o ${contador}º número:`));
+  
+    // Verifica se a entrada é válida (um número)
+    if (!isNaN(numero)) {
+    soma += numero;
+    contador++;
+     } else {
+    document.write("Número inválido. Por favor, digite um número inteiro.");
+    }
+    } while (contador <= 5);
+
+    let media = soma / 5;
+    document.write(`A média dos números é: ${media}`);
+    </script>
+</body>
+</html>

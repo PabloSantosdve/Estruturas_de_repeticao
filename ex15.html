@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let soma = 0
+        let quantidade = 0
+
+        let nome = prompt("Digite o nome da pessoa ou 'fim' para encerrar")
+
+        while(nome.toLocaleLowerCase() !== "fim"){
+            let idade = parseInt(prompt("Digite a idade de " + nome +":"))
+
+            if(isNaN(idade)){
+                soma += idade
+                quantidade++
+            }else {
+                document.write("Idade invalida. Por favor, digite um numero.")
+            }
+
+            nome = prompt("Digite o nome da proxima pessoa ou 'fim' para encerrar: ")
+        }
+        if(quantidade > 0){
+            let media = soma / quantidade
+            document.write("A media das idades é: " + media.toFixed(2)) 
+        }else {
+            documetn.write("Nenhuma idade foi inserida.")
+        }
+    </script>
+</body>
+</html>

@@ -7,7 +7,21 @@
 </head>
 <body>
 	<script>
-		
+		let numero = prompt("digite um numero inteiro: ")
+		let absoluto = Math.abs(numero) // Garante que o numero seja positivo 
+
+		let digito;
+
+		document.write("Os digitos do numero são: ")
+
+		while(absoluto > 0){
+			digito = absoluto % 10 //Obtem o ultimo digito do numero
+
+			document.write(digito)
+
+			absoluto = Math.floor(absoluto / 10) // Remove o digito do número 
+			
+		}
 	</script>
 </body>
 </html>
